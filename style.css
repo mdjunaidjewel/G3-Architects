@@ -1,0 +1,132 @@
+/* This here font-family */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Common CSS Styles Here */
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+p{
+    color: #727272;
+}
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+main > section{
+    margin: 1.5rem;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.btn-primary{
+    background-color: #FF900E;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+/* End the Common Styles */
+header{
+    height: 56rem;
+}
+.navbar{
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.navbar h2{
+    cursor: pointer;
+}
+.nav-links{
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 5px;
+}
+.nav-item a{
+    color: #424242;
+}
+.banner-content{
+    text-align: center;
+    margin: 1.8rem auto 25px;
+}
+.banner-content h1{
+    line-height: 1.4;
+}
+.banner-content p{
+    margin: 1.2rem auto;
+    width: 75%;
+}
+.banner img{
+    width: 100%;
+    border-radius: 5px;
+}
+.our-features{
+    justify-content: space-between;
+}
+.our-features-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin: 0 2rem 0;
+}
+.our-features-left img{
+   width: 100%;
+}
+.our-features-right h3{
+    margin: 20px 0;
+    font-size: 2rem;
+}
+.span-1{
+    font-weight: 500;
+    color: #727272;
+}
+.span-2{
+    color: #FF900E;
+}
+.our-features-right p{
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+/* Responsive for Small Devices */
+@media screen and (max-width:576px) {
+    header{
+        height: 50rem;
+    }
+    .navbar,
+    .nav-links,
+    .our-features{
+        flex-direction: column;
+        gap: 10px;
+        align-content: center;
+    }
+    .our-features-left{
+        grid-template-columns: repeat(1,1fr);
+        align-content: center;
+    }
+    .our-features-right,
+    .our-features-right p{
+        text-align: center;
+        width: 100%;
+    }
+    
+}
+
+
